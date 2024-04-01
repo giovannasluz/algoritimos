@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giovanna.luz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 11:04:23 "/>
+        <attribute name="created" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNDsiMTA6NTI6NTEgIjsyNjkz"/>
+        <attribute name="edited" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNDsiMTE6MDQ6MjMgIjsxOzI3OTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="base, altura, perimetro, area, diagonal" type="Integer" array="False" size=""/>
+            <input variable="base"/>
+            <input variable="altura"/>
+            <assign variable="perimetro" expression="(base*2)+(altura*2)"/>
+            <output expression="perimetro" newline="True"/>
+            <assign variable="area" expression="base*altura"/>
+            <output expression="area" newline="True"/>
+            <assign variable="diagonal" expression="Sqrt(altura^2 + base^2)"/>
+            <output expression="diagonal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

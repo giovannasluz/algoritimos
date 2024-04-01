@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giovanna.luz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-05 09:53:46 "/>
+        <attribute name="created" value="Z2lvdmFubmEubHV6O0RFU0tUT1AtUUg5TUJCRzsyMDI0LTAyLTA1OyIwODozNToxNCAiOzM1MDg="/>
+        <attribute name="edited" value="Z2lvdmFubmEubHV6O0RFU0tUT1AtUUg5TUJCRzsyMDI0LTAyLTA1OyIwOTo1Mzo0NiAiOzE7MzYyMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="mensagem" type="String" array="False" size=""/>
+            <declare name="a, b, c, presen&#231;a, m&#233;dia" type="Real" array="False" size=""/>
+            <input variable="nome"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="m&#233;dia" expression="(a*2+b*3+c*5)/10"/>
+            <output expression="m&#233;dia" newline="True"/>
+            <if expression="m&#233;dia&gt;=7">
+                <then>
+                    <input variable="presen&#231;a"/>
+                    <if expression="presen&#231;a &gt;= 25">
+                        <then>
+                            <assign variable="mensagem" expression="nome &amp; &quot; aprovado&quot;"/>
+                            <output expression="mensagem" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="mensagem" expression="nome &amp; &quot;n&#227;o aprovado&quot;"/>
+                            <output expression="mensagem" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <assign variable="mensagem" expression="nome &amp; &quot; reprovado&quot;"/>
+                    <output expression="mensagem" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

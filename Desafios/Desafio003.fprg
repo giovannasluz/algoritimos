@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giovanna.luz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 09:16:28 "/>
+        <attribute name="created" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNDsiMDk6MTY6MTMgIjsyNjk5"/>
+        <attribute name="edited" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNDsiMDk6MTY6MTUgIjsxO0dhYnJpZWwuTG9wZXM7TlQzNTsyMDI0LTAzLTA0OyIwODo1NDowNCAiO2Rlc2FmaW8wMDMuZnByZzs2OTk0"/>
+        <attribute name="edited" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNDsiMDk6MTY6MjggIjsxOzI4MTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="opc" type="Integer" array="False" size=""/>
+            <declare name="seno, coseno, tangente, angulo" type="Real" array="False" size=""/>
+            <assign variable="opc" expression="-1"/>
+            <while expression="opc!=0">
+                <output expression="&quot;1. 30&quot;" newline="True"/>
+                <output expression="&quot;2. 45&quot;" newline="True"/>
+                <output expression="&quot;3. 60&quot;" newline="True"/>
+                <output expression="&quot;0. sair&quot;" newline="True"/>
+                <input variable="opc"/>
+                <if expression="opc&gt;=0&amp;&amp;opc&lt;=5">
+                    <then>
+                        <if expression="opc==1">
+                            <then>
+                                <output expression="&quot;opcao 1&quot;" newline="True"/>
+                                <output expression="&quot;seno=0.50&quot;" newline="True"/>
+                                <output expression="&quot;co-seno=0.866&quot;" newline="True"/>
+                                <output expression="&quot;tangente=0.5774&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="opc==2">
+                                    <then>
+                                        <output expression="&quot;opcao 2&quot;" newline="True"/>
+                                        <output expression="&quot;seno=0.70&quot;" newline="True"/>
+                                        <output expression="&quot;co-seno=0.70&quot;" newline="True"/>
+                                        <output expression="&quot;tangente=1.0&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="opc==3">
+                                            <then>
+                                                <output expression="&quot;opcao 3&quot;" newline="True"/>
+                                                <output expression="&quot;seno= 0.866&quot;" newline="True"/>
+                                                <output expression="&quot;co-seno=0.50&quot;" newline="True"/>
+                                                <output expression="&quot;tangente=1.7321&quot;" newline="True"/>
+                                            </then>
+                                            <else/>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="&quot;escolher um desses 3 angulos&quot;" newline="True"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

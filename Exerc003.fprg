@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giovanna.luz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 08:26:31 "/>
+        <attribute name="created" value="Z2lvdmFubmEubHV6O0RFU0tUT1AtUUg5TUJCRzsyMDI0LTAxLTI0OyIxMDo1MzozNSAiOzM1MDQ="/>
+        <attribute name="edited" value="Z2lvdmFubmEubHV6O0RFU0tUT1AtUUg5TUJCRzsyMDI0LTAxLTI5OyIwODoyNjozMSAiOzQ7MzYyMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, delta" type="Integer" array="False" size=""/>
+            <declare name="x1, x2" type="Integer" array="False" size=""/>
+            <declare name="mensagem" type="String" array="False" size=""/>
+            <input variable="b"/>
+            <input variable="a"/>
+            <input variable="c"/>
+            <assign variable="delta" expression="b^2-4*a*c"/>
+            <output expression="delta" newline="True"/>
+            <if expression="delta &gt;=0">
+                <then>
+                    <assign variable="x1" expression="(-b-delta^(1/2))/(2*a)"/>
+                    <assign variable="x2" expression="(-b+delta^(1/2))/(2*a)"/>
+                    <output expression="x1" newline="True"/>
+                    <output expression="x2" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="mensagem" expression="&quot;Imposs&#237;vel calcular no conjunto dos n&#250;meros reais&quot;"/>
+                    <output expression="mensagem" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

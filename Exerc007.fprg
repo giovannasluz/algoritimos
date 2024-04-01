@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giovanna.luz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 10:51:38 "/>
+        <attribute name="created" value="Z2lvdmFubmEubHV6O0RFU0tUT1AtUUg5TUJCRzsyMDI0LTAxLTI5OyIxMDozODozNyAiOzM1MTQ="/>
+        <attribute name="edited" value="Z2lvdmFubmEubHV6O0RFU0tUT1AtUUg5TUJCRzsyMDI0LTAxLTI5OyIxMDo1MTozOCAiOzE7MzYxOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="KG, m, IMC" type="Real" array="False" size=""/>
+            <input variable="KG"/>
+            <input variable="M"/>
+            <assign variable="IMC" expression="KG/(m^2)"/>
+            <output expression="IMC" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

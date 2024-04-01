@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giovanna.luz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-31 09:50:29 "/>
+        <attribute name="created" value="Z2lvdmFubmEubHV6O0RFU0tUT1AtUUg5TUJCRzsyMDI0LTAxLTMxOyIwOToyOTo0MyAiOzM1MTI="/>
+        <attribute name="edited" value="Z2lvdmFubmEubHV6O0RFU0tUT1AtUUg5TUJCRzsyMDI0LTAxLTMxOyIwOTo1MDoyOSAiOzE7MzYxOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;Qual tabuada voc&#234; quer?&quot;" newline="True"/>
+            <input variable="a"/>
+            <for variable="b" start="1" end="10" direction="inc" step="1">
+                <output expression="&quot;resultado &quot; &amp; a &amp; &quot;x&quot; &amp; b &amp; &quot;=&quot; &amp; a*b" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

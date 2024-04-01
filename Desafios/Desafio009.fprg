@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giovanna.luz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 11:26:46 "/>
+        <attribute name="created" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNDsiMTE6MjE6MjQgIjsyNjkw"/>
+        <attribute name="edited" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNDsiMTE6MjY6NDYgIjsxOzI4MDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="base, altura, profundidade, diagonal" type="Integer" array="False" size=""/>
+            <input variable="base"/>
+            <input variable="altura"/>
+            <input variable="profundidade"/>
+            <assign variable="diagonal" expression="base^2 +altura^2+ profundidade^2"/>
+            <output expression="diagonal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

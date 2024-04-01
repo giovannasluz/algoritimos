@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giovanna.luz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 04:20:35 "/>
+        <attribute name="created" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNjsiMDk6MjI6MzIgIjsyNjk5"/>
+        <attribute name="edited" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNjsiMTA6MTI6MTMgIjsxO2dpb3Zhbm5hLmx1ejtERVNLVE9QLVFIOU1CQkc7MjAyNC0wMi0wNTsiMDc6NDk6MTggIjtFeGVyYzAxMy5mcHJnOzc1NTk="/>
+        <attribute name="edited" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNjsiMDQ6MjA6MzUgIjsyOzI4MDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dia, mes, ano" type="Integer" array="False" size=""/>
+            <input variable="dia"/>
+            <input variable="mes"/>
+            <input variable="ano"/>
+            <if expression="(ano % 4 == 0 &amp;&amp; ano % 100 != 0) || (ano % 400 == 0)">
+                <then>
+                    <assign variable="mensagem" expression="&quot;esse ano &#233; bissexto&quot;"/>
+                    <output expression="mensagem" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="mensagem" expression="&quot;esse ano n&#227;o &#233; bissexto&quot;"/>
+                    <output expression="mensagem" newline="True"/>
+                </else>
+            </if>
+            <if expression="dia&lt;=31">
+                <then>
+                    <if expression="mes&lt;=12">
+                        <then>
+                            <if expression="ano&lt;2999">
+                                <then>
+                                    <output expression="&quot;essa data &#233; v&#225;lida&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;o ano est&#225; incorreto&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;o mes est&#225; incorreto&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;o dia est&#225; incorreto&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
